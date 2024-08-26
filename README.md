@@ -1,6 +1,6 @@
-## edevis
+## Edevis
 
-edevis
+ERPNext Enhancement for Edevis
 
 #### License
 

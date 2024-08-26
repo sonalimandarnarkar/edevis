@@ -1,8 +1,8 @@
 app_name = "edevis"
-app_title = "edevis"
-app_publisher = "phamos"
-app_description = "edevis"
-app_email = "sonali.narkar@phamos.eu"
+app_title = "Edevis"
+app_publisher = "phamos.eu"
+app_description = "ERPNext Enhancement for Edevis"
+app_email = "support@phamos.eu"
 app_license = "mit"
 # required_apps = []
 
@@ -28,7 +28,11 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Customer" : "public/js/customer.js",
+    "Lead" : "public/js/lead.js",
+    "Opportunity": "public/js/opportunity.js",
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -129,6 +133,37 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+	"Opportunity": {
+		"validate": "edevis.custom_scripts.custom_python.opportunity.fetch_lead",
+	},
+
+}
+
+fixtures = [
+    {"dt": "Translation", "filters": [
+        [
+            "name", "in", [
+               "ivou861a8t",
+                "jmptnhu7if",
+                "jmce5c4alp",
+                "jlstq4mmlh",
+                "jld78a3m0f",
+                "jj92s036qm",
+                "jit64sp7nj",
+                "jicoil5r6b",
+                "jhuetc9r6n",
+                "jh7usnequ5",
+                "je341jr87f",
+                "jcdk7pmf86",
+                "j97drt28op",
+                "j694q5omhl",
+                "j30gjj6fbo",
+                "j12esgc2sr"    
+            ]
+        ]
+    ]},
+]
 
 # Scheduled Tasks
 # ---------------

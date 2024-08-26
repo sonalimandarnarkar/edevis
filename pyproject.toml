@@ -1,9 +1,9 @@
 [project]
 name = "edevis"
 authors = [
-    { name = "phamos", email = "sonali.narkar@phamos.eu"}
+    { name = "phamos.eu", email = "support@phamos.eu"}
 ]
-description = "edevis"
+description = "ERPNext Enhancement for Edevis"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

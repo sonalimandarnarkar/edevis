@@ -62,3 +62,15 @@ frappe.ui.form.on("Customer", {
     });
   },
 });
+
+frappe.ui.form.on("Customer", {
+  //Remove option to generate Opportunity from Lead
+  //Remove option to generate quote from Lead
+  refresh(frm) {
+    setTimeout(() => {
+      frm.remove_custom_button("Get Customer Group Details", "Actions");
+      frm.remove_custom_button("Pricing Rule", "Create");
+      frm.remove_custom_button("Accounting Ledger", "View");
+    }, 10);
+  },
+});

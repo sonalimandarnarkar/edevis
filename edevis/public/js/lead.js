@@ -93,10 +93,12 @@ frappe.ui.form.on("Lead", {
   //Remove option to generate Opportunity from Lead
   //Remove option to generate quote from Lead
   refresh(frm) {
+    console.log("test");
+
     setTimeout(() => {
       frm.remove_custom_button("Opportunity", "Create");
       frm.remove_custom_button("Quotation", "Create");
       frm.remove_custom_button("Add to Prospect", "Action");
-    }, 10);
+    }, 50);
   },
 });

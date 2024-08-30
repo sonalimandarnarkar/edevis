@@ -116,6 +116,6 @@ frappe.ui.form.on("Customer", {
       frm.remove_custom_button("Get Customer Group Details", "Actions");
       frm.remove_custom_button("Pricing Rule", "Create");
       frm.remove_custom_button("Accounting Ledger", "View");
-    }, 10);
+    }, 50);
   },
 });

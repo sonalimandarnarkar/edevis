@@ -1,41 +1,6 @@
 frappe.ui.form.on("Opportunity", {
   refresh: function (frm) {
     frm.trigger("setup_connections");
-    // Ensure custom_lead is defined and has a value
-    if (frm.doc.custom_lead) {
-      frappe.call({
-        method: "frappe.client.get_value",
-        args: {
-          doctype: "Lead",
-          filters: { name: frm.doc.custom_lead },
-          fieldname: "custom_test_problem",
-        },
-        callback: function (r) {
-          if (r.message) {
-            // Check if the field is present in the response
-            const customTestProblem = r.message.custom_test_problem;
-            if (customTestProblem) {
-              frm.set_query("custom_test_problem", function () {
-                return {
-                  filters: {
-                    name: customTestProblem,
-                  },
-                };
-              });
-            } else {
-            }
-          }
-        },
-      });
-    } else {
-      frm.set_query("custom_test_problem", function () {
-        return {
-          filters: {
-            name: "",
-          },
-        };
-      });
-    }
   },
   validate: function (frm) {
     if (frm.doc.opportunity_from !== "Customer") {
@@ -46,6 +11,8 @@ frappe.ui.form.on("Opportunity", {
   },
   setup_connections(frm) {
     //add connections for Lead
+    $('[class="document-link"][data-doctype="Supplier Quotation"]').remove();
+    $('[class="document-link"][data-doctype="Request for Quotation"]').remove();
     $('[class="document-link"][data-doctype="Lead"]').remove();
     if ($('.document-link-badge[data-doctype="Lead"]').length == 0) {
       frappe.db
@@ -127,5 +94,16 @@ frappe.ui.form.on("Opportunity", {
           $(".open-notification").hide();
         });
     }
+  },
+});
+
+frappe.ui.form.on("Opportunity", {
+  //Remove option to generate Opportunity from Lead
+  //Remove option to generate quote from Lead
+  refresh(frm) {
+    setTimeout(() => {
+      frm.remove_custom_button("Supplier Quotation", "Create");
+      frm.remove_custom_button("Request For Quotation", "Create");
+    }, 50);
   },
 });

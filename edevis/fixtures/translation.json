@@ -7,10 +7,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-23 10:32:18.980187",
-  "name": "ivou861a8t",
-  "source_text": "Test Problem",
-  "translated_text": "Prüfproblem"
+  "modified": "2024-09-02 13:13:43.949667",
+  "name": "gaofstpch2",
+  "source_text": "Draft",
+  "translated_text": "Entwurf"
  },
  {
   "context": null,
@@ -20,10 +20,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 17:32:23.891052",
-  "name": "j12esgc2sr",
-  "source_text": "Department",
-  "translated_text": "Abteilung"
+  "modified": "2024-09-02 13:15:42.310238",
+  "name": "gb1co6jil4",
+  "source_text": "To be released by ADM",
+  "translated_text": "Freizugeben von ADM"
  },
  {
   "context": null,
@@ -33,10 +33,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 17:35:42.428727",
-  "name": "j30gjj6fbo",
-  "source_text": "edevis Additional Information",
-  "translated_text": "edevis Zusatzinformationen"
+  "modified": "2024-09-02 13:20:00.159870",
+  "name": "gb8n8pofv1",
+  "source_text": "To be released by APP",
+  "translated_text": "Freizugeben von APP"
  },
  {
   "context": null,
@@ -46,10 +46,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 17:43:22.745608",
-  "name": "j694q5omhl",
-  "source_text": "Test problem / System request",
-  "translated_text": "Prüfproblem / Systemanfrage"
+  "modified": "2024-09-02 13:15:15.958348",
+  "name": "gbhpvjqck1",
+  "source_text": "Cancellation by ADM",
+  "translated_text": "Absage ADM"
  },
  {
   "context": null,
@@ -59,10 +59,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 17:46:18.963824",
-  "name": "j97drt28op",
-  "source_text": "Inquiry Description Details",
-  "translated_text": "Anfrage Beschreibung Details"
+  "modified": "2024-09-02 13:16:37.073764",
+  "name": "gceik5povl",
+  "source_text": "Can be converted to customer",
+  "translated_text": "Kann zu Kunde umgewandelt werden"
  },
  {
   "context": null,
@@ -72,10 +72,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 17:51:46.047586",
-  "name": "jcdk7pmf86",
-  "source_text": "Non-disclosure agreement",
-  "translated_text": "Geheimhaltungsvereinbarung"
+  "modified": "2024-09-02 13:17:05.144145",
+  "name": "gcnbiriisu",
+  "source_text": "Marketing mailing list",
+  "translated_text": "Marketingverteiler"
  },
  {
   "context": null,
@@ -85,10 +85,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 17:54:48.130561",
-  "name": "je341jr87f",
-  "source_text": "Contract File",
-  "translated_text": "Vertragsdatei"
+  "modified": "2024-09-02 13:22:42.895994",
+  "name": "gg0s7pu06s",
+  "source_text": "Forward to ADM",
+  "translated_text": "An ADM weitergeben"
  },
  {
   "context": null,
@@ -98,10 +98,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 18:00:11.675160",
-  "name": "jh7usnequ5",
-  "source_text": "Examination edevis",
-  "translated_text": "Prüfung edevis"
+  "modified": "2024-09-02 13:23:54.737632",
+  "name": "ggnbofjoaq",
+  "source_text": "No",
+  "translated_text": "Nein"
  },
  {
   "context": null,
@@ -111,10 +111,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 18:01:11.799004",
-  "name": "jhuetc9r6n",
-  "source_text": "Test Problem",
-  "translated_text": "Prüfproblem"
+  "modified": "2024-09-02 13:24:04.412801",
+  "name": "ggqc7oh1gj",
+  "source_text": "Yes",
+  "translated_text": "Ja"
  },
  {
   "context": null,
@@ -124,10 +124,10 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 18:01:57.617655",
-  "name": "jicoil5r6b",
-  "source_text": "Component Size",
-  "translated_text": "Bauteilgröße"
+  "modified": "2024-09-02 13:27:40.353675",
+  "name": "gitrkf1beu",
+  "source_text": "Reopen",
+  "translated_text": "Wieder öffnen"
  },
  {
   "context": null,
@@ -137,74 +137,9 @@
   "docstatus": 0,
   "doctype": "Translation",
   "language": "de",
-  "modified": "2024-08-22 18:02:50.243820",
-  "name": "jit64sp7nj",
-  "source_text": "Defect Type",
-  "translated_text": "Defekttyp"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "de",
-  "modified": "2024-08-22 18:03:28.206726",
-  "name": "jj92s036qm",
-  "source_text": "Defect Size",
-  "translated_text": "Defektgröße"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "de",
-  "modified": "2024-08-22 18:07:06.335608",
-  "name": "jld78a3m0f",
-  "source_text": "Defective Parts",
-  "translated_text": "Defektteile"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "de",
-  "modified": "2024-08-22 18:07:56.571727",
-  "name": "jlstq4mmlh",
-  "source_text": "Test Sequence",
-  "translated_text": "Prüfsequenz"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "de",
-  "modified": "2024-08-22 18:08:46.224101",
-  "name": "jmce5c4alp",
-  "source_text": "Test Cycle",
-  "translated_text": "Prüftakt"
- },
- {
-  "context": null,
-  "contributed": 0,
-  "contribution_docname": null,
-  "contribution_status": "",
-  "docstatus": 0,
-  "doctype": "Translation",
-  "language": "de",
-  "modified": "2024-08-22 18:09:29.395785",
-  "name": "jmptnhu7if",
-  "source_text": "Time Horizon",
-  "translated_text": "Zeithorizont"
+  "modified": "2024-09-02 13:29:16.788226",
+  "name": "gjl90a7e63",
+  "source_text": "Forward marketing mailing list",
+  "translated_text": "weitergeben Marketingverteiler"
  }
 ]

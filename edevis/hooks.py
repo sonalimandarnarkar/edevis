@@ -135,7 +135,7 @@ doctype_js = {
 # }
 doc_events = {
 	"Opportunity": {
-		"validate": "edevis.custom_scripts.custom_python.opportunity.fetch_lead",
+		"validate": "edevis.custom_scripts.custom_python.opportunity.fetch_lead"
 	},
 
 }
@@ -144,22 +144,24 @@ fixtures = [
     {"dt": "Translation", "filters": [
         [
             "name", "in", [
-               "ivou861a8t",
-                "jmptnhu7if",
-                "jmce5c4alp",
-                "jlstq4mmlh",
-                "jld78a3m0f",
-                "jj92s036qm",
-                "jit64sp7nj",
-                "jicoil5r6b",
-                "jhuetc9r6n",
-                "jh7usnequ5",
-                "je341jr87f",
-                "jcdk7pmf86",
-                "j97drt28op",
-                "j694q5omhl",
-                "j30gjj6fbo",
-                "j12esgc2sr"    
+            "gjl90a7e63",
+            "gitrkf1beu",
+            "ggqc7oh1gj",
+            "ggnbofjoaq",
+            "gg0s7pu06s",
+            "gb8n8pofv1",
+            "gcnbiriisu",
+            "gceik5povl",
+            "gb1co6jil4",
+            "gbhpvjqck1",
+            "gaofstpch2"
+            ]
+        ]
+    ]},
+    {"dt": "Workflow", "filters": [
+        [
+            "name", "in", [
+            "Lead Approval Process"
             ]
         ]
     ]},

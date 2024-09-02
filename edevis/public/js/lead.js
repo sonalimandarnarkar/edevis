@@ -1,10 +1,11 @@
 frappe.ui.form.on("Lead", {
   refresh: function (frm) {
     frm.trigger("setup_connections");
-    //add connections for customer
   },
+
   setup_connections(frm) {
     //add connections for opportunity
+    $('[class="document-link"][data-doctype="Prospect"]').remove();
     $('[class="document-link"][data-doctype="Opportunity"]').remove();
     if ($('.document-link-badge[data-doctype="Opportunity"]').length == 0) {
       frappe.db
@@ -23,13 +24,13 @@ frappe.ui.form.on("Lead", {
             opportunities = [];
           }
           if (opportunities.length > 0) {
-            $('[class="document-link"][data-doctype="Prospect"]')
+            $('[class="document-link"][data-doctype="Quotation"]')
               .parent()
               .append(
                 `<div class="document-link" data-doctype="Opportunity"><div class="document-link-badge" data-doctype="Opportunity"><span class="count">${opportunities.length}</span><a class="badge-link" id="open-op">Opportunity</a></div></div>`
               );
           } else {
-            $('[class="document-link"][data-doctype="Prospect"]')
+            $('[class="document-link"][data-doctype="Quotation"]')
               .parent()
               .append(
                 `<div class="document-link" data-doctype="Opportunity"><div class="document-link-badge" data-doctype="Opportunity"><a class="badge-link" id="open-op">Opportunity</a></div></div>`
@@ -65,13 +66,13 @@ frappe.ui.form.on("Lead", {
             customers = [];
           }
           if (customers.length > 0) {
-            $('[class="document-link"][data-doctype="Prospect"]')
+            $('[class="document-link"][data-doctype="Quotation"]')
               .parent()
               .append(
                 `<div class="document-link" data-doctype="Customer"><div class="document-link-badge" data-doctype="Customer"><span class="count">${customers.length}</span><a class="badge-link" id="open-cu">Customer</a></div></div>`
               );
           } else {
-            $('[class="document-link"][data-doctype="Prospect"]')
+            $('[class="document-link"][data-doctype="Quotation"]')
               .parent()
               .append(
                 `<div class="document-link" data-doctype="Customer"><div class="document-link-badge" data-doctype="Customer"><a class="badge-link" id="open-cu">Customer</a></div></div>`
@@ -88,17 +89,33 @@ frappe.ui.form.on("Lead", {
     }
   },
 });
-
 frappe.ui.form.on("Lead", {
   //Remove option to generate Opportunity from Lead
   //Remove option to generate quote from Lead
   refresh(frm) {
-    console.log("test");
-
     setTimeout(() => {
       frm.remove_custom_button("Opportunity", "Create");
       frm.remove_custom_button("Quotation", "Create");
+      frm.remove_custom_button("Prospect", "Create");
+      frm.remove_custom_button("Customer", "Create");
       frm.remove_custom_button("Add to Prospect", "Action");
     }, 50);
+  },
+});
+
+frappe.ui.form.on("Lead", {
+  refresh: function (frm) {
+    if (frm.doc.workflow_state == "Can be converted to customer") {
+      frm.add_custom_button(
+        __("Create Customer"),
+        function () {
+          frappe.model.open_mapped_doc({
+            method: "edevis.custom_scripts.custom_python.lead.create_customer",
+            frm: frm,
+          });
+        },
+        __("Create")
+      );
+    }
   },
 });

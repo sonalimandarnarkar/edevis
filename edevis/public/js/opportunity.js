@@ -96,14 +96,3 @@ frappe.ui.form.on("Opportunity", {
     }
   },
 });
-
-frappe.ui.form.on("Opportunity", {
-  //Remove option to generate Opportunity from Lead
-  //Remove option to generate quote from Lead
-  refresh(frm) {
-    setTimeout(() => {
-      frm.remove_custom_button("Supplier Quotation", "Create");
-      frm.remove_custom_button("Request For Quotation", "Create");
-    }, 50);
-  },
-});

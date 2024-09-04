@@ -89,20 +89,7 @@ frappe.ui.form.on("Lead", {
     }
   },
 });
-frappe.ui.form.on("Lead", {
-  //Remove option to generate Opportunity from Lead
-  //Remove option to generate quote from Lead
-  refresh(frm) {
-    setTimeout(() => {
-      frm.remove_custom_button("Opportunity", "Create");
-      frm.remove_custom_button("Quotation", "Create");
-      frm.remove_custom_button("Prospect", "Create");
-      frm.remove_custom_button("Customer", "Create");
-      frm.remove_custom_button("Add to Prospect", "Action");
-    }, 50);
-  },
-});
-
+/*
 frappe.ui.form.on("Lead", {
   refresh: function (frm) {
     if (frm.doc.workflow_state == "Can be converted to customer") {
@@ -119,3 +106,4 @@ frappe.ui.form.on("Lead", {
     }
   },
 });
+*/

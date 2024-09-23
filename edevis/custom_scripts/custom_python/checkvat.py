@@ -5,12 +5,10 @@ from suds.client import Client
 # used for BBF-ONLINE request
 import xmlrpc.client
 from datetime import datetime
-from xmlrpc.server import SimpleXMLRPCRequestHandler
 import xml.etree.ElementTree as ET
 
 # used for VIES request
 VIES_URL = "https://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl"
-import requests
 
 error_dict = {
 	"200" : "Die angefragte USt-IdNr. ist gültig.",
@@ -199,5 +197,3 @@ def checkvat(name, tax_id=None, address=None):
 	
 	# show results to the user
 	frappe.msgprint(str, title=customer.tax_id_validation_result, indicator='green' if testresult else 'red')
-
-	return

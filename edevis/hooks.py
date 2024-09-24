@@ -264,3 +264,32 @@ fixtures = [
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+jinja = {
+    "methods": [
+        "edevis.custom_scripts.custom_python.quote_methods.check_quoteitems",
+        "edevis.custom_scripts.custom_python.quote_methods.has_custom_pos",
+        "edevis.custom_scripts.custom_python.quote_methods.quote_checkpaymentterms",
+        "edevis.custom_scripts.custom_python.quote_methods.quoteitem_is_header",
+        "edevis.custom_scripts.custom_python.quote_methods.is_sectionend",
+        "edevis.custom_scripts.custom_python.quote_methods.quoteitem_has_discount",
+        "edevis.custom_scripts.custom_python.quote_methods.structurize_quoteitem"
+    ]
+}
+
+
+fixtures = [
+    {"dt": "Print Format", "filters": [
+        [
+            "name", "in", [
+                "Quote",
+                "QuoteNew",
+                "QuoteTest",
+                "Leistungsbeschreibung",
+                "Auftragsbestätigung",
+                "Invoice",
+                "DeliveryNote"
+              ]
+        ]
+    ]}
+]

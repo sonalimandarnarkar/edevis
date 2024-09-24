@@ -276,3 +276,20 @@ jinja = {
         "edevis.custom_scripts.custom_python.quote_methods.structurize_quoteitem"
     ]
 }
+
+
+fixtures = [
+    {"dt": "Print Format", "filters": [
+        [
+            "name", "in", [
+                "Quote",
+                "QuoteNew",
+                "QuoteTest",
+                "Leistungsbeschreibung",
+                "Auftragsbestätigung",
+                "Invoice",
+                "DeliveryNote"
+              ]
+        ]
+    ]}
+]

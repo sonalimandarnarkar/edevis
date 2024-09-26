@@ -158,6 +158,19 @@ fixtures = [
             ]
         ]
     ]},
+    {"dt": "Print Format", "filters": [
+        [
+            "name", "in", [
+                "Quote",
+                "QuoteNew",
+                "QuoteTest",
+                "Leistungsbeschreibung",
+                "Auftragsbestätigung",
+                "Invoice",
+                "DeliveryNote"
+              ]
+        ]
+    ]},
     {"dt": "Workflow", "filters": [
         [
             "name", "in", [
@@ -165,6 +178,34 @@ fixtures = [
             ]
         ]
     ]},
+    {
+		"doctype": "Workflow State"
+    },
+    {"dt": "Role", "filters": [
+        [
+            "name", "in", [
+            "00201 ADM",
+            "00201 APP"
+            ]
+        ]
+    ]},
+     {"dt": "Client Script", "filters": [
+        [
+            "name", "in", [
+            "Opportunity Validation",
+            "Lead Validations"
+            ]
+        ]
+    ]},
+     {"dt": "Notification", "filters": [
+        [
+            "name", "in", [
+            "Lead workflow",
+            ]
+        ]
+    ]},
+    
+
 ]
 
 # Scheduled Tasks
@@ -277,19 +318,3 @@ jinja = {
     ]
 }
 
-
-fixtures = [
-    {"dt": "Print Format", "filters": [
-        [
-            "name", "in", [
-                "Quote",
-                "QuoteNew",
-                "QuoteTest",
-                "Leistungsbeschreibung",
-                "Auftragsbestätigung",
-                "Invoice",
-                "DeliveryNote"
-              ]
-        ]
-    ]}
-]
